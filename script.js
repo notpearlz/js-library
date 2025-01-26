@@ -85,6 +85,8 @@ function loadLibrary() {
 
             } else if(detail == "color"){
                 book.style.backgroundColor = myLibrary[bookIndex][detail];
+            } else if(detail == "pages"){
+                li.textContent = myLibrary[bookIndex][detail] + " pages";
             }
             else {
                 li.textContent = myLibrary[bookIndex][detail];
