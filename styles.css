@@ -1,0 +1,87 @@
+:root {
+    --primary-bookshelf-color: #b6752e;
+    --bg-bookshelf-color: #814300;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+main {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    padding: 0 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.bookshelf {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fill, 1fr); 
+    min-height: 100px;
+
+    border: 50px solid var(--primary-bookshelf-color);
+
+
+
+   background-color: #814300;
+}
+
+
+.book-space {
+    border-bottom: 50px solid var(--primary-bookshelf-color);
+    padding: 0px 10px;
+
+
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-right: 5px solid #e6790d;    
+    border-left: 5px solid #e6790d;    
+
+    justify-content: space-around;
+    height: 100%;
+}
+
+
+
+.book-title {
+    font-size: calc(1em + 10px);
+}
+
+
+
+.book-read-btn {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.delete-book-btn {
+    border-radius: 10px;
+    padding: 0 5px;
+    background-color: transparent;
+}
+
+.new-book-form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-self: center;
+    gap:10px;
+    padding: 20px;
+
+    background-color: #808080;
+}
